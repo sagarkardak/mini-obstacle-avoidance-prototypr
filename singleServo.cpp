@@ -2,6 +2,7 @@
 /*Components used: Arduino Uno R3
                    Ultrasonic Sensor HC-SR04
                    Micro-Servo
+  with Servo library
 */
 
 #include <Servo.h>
