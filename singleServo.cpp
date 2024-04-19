@@ -1,4 +1,9 @@
 //C++ code
+/*Components used: Arduino Uno R3
+                   Ultrasonic Sensor HC-SR04
+                   Micro-Servo
+*/
+
 #include <Servo.h>
 
 int trigPin=5;
