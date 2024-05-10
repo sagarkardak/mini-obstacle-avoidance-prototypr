@@ -42,7 +42,7 @@ void loop()
   
   if (distance_cm<=10)
   {
-    myServo.write(180);
+    myServo.write(90);
     delay(15);
   }
   else{
