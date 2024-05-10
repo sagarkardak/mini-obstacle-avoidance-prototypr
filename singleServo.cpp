@@ -7,17 +7,16 @@
 
 #include <Servo.h>
 
-int trigPin=5;
-int echoPin=4;
+const int trigPin=5;
+const int echoPin=4;
 int servoSig=6;
-int a;
 Servo myServo;
 
 float duration_us, distance_cm;
 
 void setup()
 {
-  Serial.begin(960);
+  Serial.begin(9600);
   
   myServo.attach(6);
   
@@ -31,7 +30,8 @@ void loop()
 {
   digitalWrite(trigPin, HIGH);
   delay(10);
-  digitalWrite(echoPin, LOW);
+  digitalWrite(trigPin, LOW);
+  delay(10);
   
   duration_us=pulseIn(echoPin, HIGH);
   distance_cm=0.017*duration_us;
