@@ -49,6 +49,4 @@ void loop()
     myServo.write(0);
     delay(15);
   }
-  
-  delay(50);
 }
